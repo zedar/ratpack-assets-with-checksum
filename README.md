@@ -7,7 +7,7 @@ Project requries new Ratpack functionality developed in [ratpack-fork](https://g
 
 ## Build
 
-1. Build ratpack-fork project
+### Build ratpack-fork project
 
     $ git clone https://github.com/zedar/ratpack ratpack-fork
     $ cd ratpack-fork
@@ -15,7 +15,7 @@ Project requries new Ratpack functionality developed in [ratpack-fork](https://g
 
 Output maven repo is installed in ```ratpack-fork/build/localrepo```
 
-2. Set local maven repo in ```build.gradle```
+### Set local maven repo in ```build.gradle```
 
     buildscript {
       repositories {
@@ -29,14 +29,14 @@ Output maven repo is installed in ```ratpack-fork/build/localrepo```
         classpath "com.github.jengelman.gradle.plugins:shadow:1.2.0"
       }
     }
-    
+
     repositories {
       jcenter()
       maven { url 'http://clinker.netty.io/nexus/content/repositories/snapshots' }
       maven { url "file:///YOUR_PATH_TO/ratpack-fork/build/localrepo" }
     }
     
-3. Start server
+### Start server
 
     $ ./gradlew run
 
