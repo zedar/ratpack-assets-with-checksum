@@ -1,0 +1,18 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-3.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:text="${title}">Ratpack: ${title}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <link rel="stylesheet" href="/lib/normalize/normalize.css" th:href="${assets['lib/normalize/normalize.css']}"></link>
+  <link rel="stylesheet" href="/styles/ratpack.css" th:href="${assets['styles/ratpack.css']}"></link>
+  <script src="/lib/modernizr/modernizr.js" th:src="${assets['lib/modernizr/modernizr.js']}"></script>
+</head>
+<body>
+  <header>
+    <h1 th:text="${title}">Ratpack with thymeleaf</h1>
+    <p>a micro web framework for Java &amp; Groovy</p>
+  </header>
+</body>
+</html>

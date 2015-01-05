@@ -1,0 +1,5 @@
+package chksum
+
+class Generator {
+
+}
