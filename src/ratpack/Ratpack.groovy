@@ -8,10 +8,15 @@ import static ratpack.groovy.Groovy.groovyMarkupTemplate
 // Handlebars Template imports
 import ratpack.handlebars.HandlebarsModule
 import static ratpack.handlebars.Template.handlebarsTemplate
+import com.github.jknack.handlebars.Handlebars;
 
 // Thymeleaf Template imports
 import ratpack.thymeleaf.ThymeleafModule
 import static ratpack.thymeleaf.Template.thymeleafTemplate
+
+// 
+import chksum.ChecksumModule
+import chksum.handlebars.AssetHelper
 
 ratpack {
   bindings {
@@ -24,6 +29,11 @@ ratpack {
 
     // bindings for Thymeleaf Templates
     add new ThymeleafModule()
+
+    // bindings for checksum calculation
+    add new ChecksumModule()
+
+    bind AssetHelper
   }
 
   handlers {

@@ -8,8 +8,7 @@ buildscript {
     }
   }
   dependencies {
-    /* classpath "io.ratpack:ratpack-gradle:0.9.12" */
-    classpath "io.ratpack:ratpack-gradle:0.9.13-SNAPSHOT"
+    classpath "io.ratpack:ratpack-gradle:0.9.14-SNAPSHOT"
     classpath "com.github.jengelman.gradle.plugins:shadow:1.2.0"
   }
 }
